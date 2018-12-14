@@ -6,11 +6,11 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{route('root_path')}}">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item {{set_active_route('root_path')}}">
+        <a class="nav-link " href="{{route('root_path')}}">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+      <li class="nav-item {{set_active_route('about_path')}}">
+        <a class="nav-link" href="{{route('about_path')}}">About</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#">Artisans</a>
